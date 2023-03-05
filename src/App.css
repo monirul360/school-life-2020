@@ -1,38 +1,129 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 0px;
+}
+ul {
+  margin-bottom: 0px;
+  padding-left: 0px;
+  list-style: none;
+}
+nav {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  border-bottom: 1px solid #ccc;
+  z-index: 100;
+  background-color: white;
+}
+nav svg {
+  width: 36px;
+  height: 36px;
+  color: black;
+}
+nav .nav-item svg {
+  width: 30px;
+  height: 30px;
+}
+.menu {
+  width: 300px;
+  height: 100vh;
+  position: fixed;
+  background-color: white;
+  padding: 15px 24px;
+  border: 1px solid #ccc;
+  border-top: none;
+  top: 53px;
+  z-index: 99;
+}
+.menunone {
+  display: none;
+}
+.menu ul li {
+  line-height: 2.8;
+}
+.menu ul li a {
+  text-decoration: none;
+  color: black;
+}
+.logo h2 {
   text-align: center;
+  margin: 30px auto;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.photo-album {
+  width: 95%;
+  margin: auto;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.photo-album {
+  column-count: 3;
+  column-gap: 5px;
+  margin-bottom: 30px;
+}
+.photo-items {
+  margin: 0px;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  break-inside: avoid;
+  margin-bottom: 5px;
+}
+.photo-items img {
+  width: 100%;
+}
+.photo-items > img {
+  grid-row: 1 / -1;
+  grid-column: 1;
+}
+.modal-dialog {
+  max-width: 90%;
+  margin: 1.75rem auto;
+}
+.modal-body {
+  padding: 0px;
+}
+/* ========video-section============= */
+.video-section {
+  width: 95%;
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 15px;
+}
+@media (max-width: 779px) {
+  nav .logo {
+    position: fixed;
+    bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: darkred;
+    font-weight: bold;
+    z-index: 80;
+  }
+  .video-section {
+    width: 95%;
+    margin: 5px auto;
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 15px;
   }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+@media (min-width: 1200px) {
+  .video-section {
+    width: 95%;
+    margin: 5px auto;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 15px;
   }
 }
