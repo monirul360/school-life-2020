@@ -8,7 +8,7 @@ const Home = () => {
   const [photo, setPhoto] = useState([]);
   const [monirul, setmonirul] = useState(null);
   useEffect(() => {
-    fetch("http://localhost:5000/photo")
+    fetch("https://school-life.onrender.com/photo")
       .then((res) => res.json())
       .then((data) => setPhoto(data));
   }, []);
@@ -16,7 +16,7 @@ const Home = () => {
     <div>
       <section className="photo-album">
         {photo.map((m) => (
-          <Photo m={m} setmonirul={setmonirul}></Photo>
+          <Photo key={m._id} m={m} setmonirul={setmonirul}></Photo>
         ))}
       </section>
       <Model monirul={monirul}></Model>

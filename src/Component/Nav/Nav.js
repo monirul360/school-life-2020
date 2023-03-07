@@ -79,7 +79,7 @@ const Nav = () => {
       <div className={`${menu ? "menu" : "menunone"}`}>
         <ul>
           <li>
-            <a href="">
+            <a href="/">
               <div className="d-flex align-items-center">
                 <div>
                   <svg
@@ -99,7 +99,7 @@ const Nav = () => {
             </a>
           </li>
           <li>
-            <a href={`Video`}>
+            <a href={`/Video`}>
               <div className="d-flex align-items-center">
                 <div>
                   <svg

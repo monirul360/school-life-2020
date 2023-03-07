@@ -98,6 +98,15 @@ nav .nav-item svg {
   grid-gap: 15px;
 }
 @media (max-width: 779px) {
+  nav svg {
+    width: 32px;
+    height: 32px;
+    color: black;
+  }
+  nav .nav-item svg {
+    width: 25px;
+    height: 25px;
+  }
   nav .logo {
     position: fixed;
     bottom: 10px;
