@@ -17,7 +17,7 @@ const Home = () => {
     <div>
       <section className="photo-album">
         {photo.map((m) => (
-          <Photo key={m._id} m={m} setmonirul={setmonirul}></Photo>
+          <Photo key={m.id} m={m} setmonirul={setmonirul}></Photo>
         ))}
       </section>
       <Model monirul={monirul}></Model>
