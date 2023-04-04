@@ -1,6 +1,5 @@
 import React from "react";
 import { useState } from "react";
-import { Link } from "react-router-dom";
 
 const Nav = () => {
   const [menu, setMenu] = useState(false);
@@ -35,7 +34,7 @@ const Nav = () => {
             <p>School Life 2020</p>
           </div>
           <div className="nav-item">
-            <a href="" className="mr-4">
+            <a href="/" className="mr-4">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="16"
@@ -48,7 +47,7 @@ const Nav = () => {
                 <path d="M13.5 10a.5.5 0 0 1 .5.5V12h1.5a.5.5 0 1 1 0 1H14v1.5a.5.5 0 1 1-1 0V13h-1.5a.5.5 0 0 1 0-1H13v-1.5a.5.5 0 0 1 .5-.5z" />
               </svg>
             </a>
-            <a href="" className="ms-4">
+            <a href="/" className="ms-4">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="16"
@@ -61,7 +60,7 @@ const Nav = () => {
                 <path d="M2 4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1.172a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 9.172 2H6.828a2 2 0 0 0-1.414.586l-.828.828A2 2 0 0 1 3.172 4H2zm.5 2a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1zm9 2.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0z" />
               </svg>
             </a>
-            <a href="" className="ms-3">
+            <a href="/" className="ms-3">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="16"
@@ -99,7 +98,7 @@ const Nav = () => {
             </a>
           </li>
           <li>
-            <a href={`/Video`}>
+            <a href="/Video">
               <div className="d-flex align-items-center">
                 <div>
                   <svg
@@ -119,7 +118,7 @@ const Nav = () => {
             </a>
           </li>
           <li>
-            <a href="">
+            <a href="/">
               <div className="d-flex align-items-center">
                 <div>
                   <svg
@@ -142,7 +141,7 @@ const Nav = () => {
       <br />
       <br />
       <br />
-    </div>
+    </div >
   );
 };
 
